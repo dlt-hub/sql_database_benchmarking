@@ -1,0 +1,2 @@
+# Testing db2 connection in my local windows laptop
+`ibm_db_sa` does not need IBM client libraries to connect to db2. I first did `pip install -r requirments.txt` to install the necessary dependencies and then ran the script `test_db2_connection.py` to connect to the db2 database created [here](https://python-oracledb.readthedocs.io/en/latest/user_guide/appendix_b.html).

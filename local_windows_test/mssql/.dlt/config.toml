@@ -1,0 +1,6 @@
+[sources.data_writer]
+file_max_bytes=3000000
+buffer_max_items=200000
+
+[runtime]
+dlthub_telemetry = false

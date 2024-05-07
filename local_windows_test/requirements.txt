@@ -1,0 +1,13 @@
+sqlalchemy>=1.4
+dlt[filesystem]>=0.4.10
+pandas
+pyarrow
+
+# db2
+ibm_db_sa==3.1.4
+
+# oracle
+oracledb
+
+# SQL Server
+pymssql

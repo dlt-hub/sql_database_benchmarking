@@ -1,0 +1,3 @@
+# Testing oracledb connection in my local windows laptop
+I used the `python-oracledb` module that runs, by default, on thin mode. (More info [here](https://python-oracledb.readthedocs.io/en/latest/user_guide/appendix_b.html)). 
+ I first did `pip install -r requirments.txt` to install the necessary dependencies and then ran the script `test_oracledb_connection.py` to connect to the oracledb database created [here](https://github.com/dlt-hub/oracle-db2-mssql-and-benchmarking-tests/blob/main/mssql/README.md).

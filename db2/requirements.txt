@@ -1,0 +1,6 @@
+sqlalchemy>=1.4
+dlt[filesystem]==0.4.9a1
+pandas
+connectorx
+pymysql>=1.0.0
+ibm_db_sa

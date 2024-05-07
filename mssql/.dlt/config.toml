@@ -1,0 +1,14 @@
+[sources.data_writer]
+file_max_bytes=3000000
+buffer_max_items=200000
+
+[normalize]
+workers=3
+# [normalize.data_writer]
+# disable_compression=true
+# [normalize.parquet_normalizer]
+# add_dlt_load_id=true
+
+# [unsw_upload.sources.data_writer]
+[runtime]
+dlthub_telemetry = false
