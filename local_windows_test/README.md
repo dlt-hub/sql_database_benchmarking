@@ -25,7 +25,7 @@ Full code example can be found in [test_oracledb_connection.py](oracledb/test_or
 [ibm_db_sa](https://pypi.org/project/ibm-db-sa/) - official IBM Python driver. We recommend using version `3.1.4`.
 
 ```
-pip install ibm_db_sa==3.1.4
+pip install ibm_db==3.1.4 ibm_db_sa
 ```
 
 Example connection string:
@@ -48,14 +48,14 @@ if os.name == "nt":
     os.add_dll_directory(os.path.join(site.getsitepackages()[0],r"Lib\site-packages\clidriver\bin"))
 ```
 
-In these tests `ibm_db_sa==3.1.4` was used, which works fine for all our cases.
+In these tests `3.1.4` version was used, which works fine for all our cases.
 
 ## MSSQL
 
 [pymssql](https://www.pymssql.org/) - official SQLAlchemy dialect for SQL Server, but different from official Microsoft one.
 
 ```
-pip install ibm_db_sa==3.1.4
+pip install pymssql
 ```
 
 Example connection string:
@@ -64,4 +64,4 @@ Example connection string:
 "mssql+pymssql://loader:loader-xXx$%@localhost/dlt_data"
 ```
 
-Full code example can be found in [test_db2_connection.py](mssql/test_pymssql_connection.py).
+Full code example can be found in [test_pymssql_connection.py](mssql/test_pymssql_connection.py).
