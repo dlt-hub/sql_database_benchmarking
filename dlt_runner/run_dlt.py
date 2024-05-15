@@ -7,7 +7,8 @@ from dlt.common.runners.venv import Venv
 # 3. we demonstrate how to pass function arguments: "arg1", "arg2"
 # 4. we demonstrate that environment variables are passed to the executing script
 os.environ["RUNTIME__LOG_LEVEL"] = "INFO"
-os.environ["RUNTIME__LOG_FORMAT"] = "[{levelname:<21}]|{process}|{thread}|{name}|{filename}|{funcName}:{lineno}|{message}"
+# remove timestamp + log level from log format
+os.environ["RUNTIME__LOG_FORMAT"] = "{process}|{thread}|{name}|{filename}|{funcName}:{lineno}|{message}"
 # default log_format: "{asctime}|[{levelname:<21}]|{process}|{thread}|{name}|{filename}|{funcName}:{lineno}|{message}""
 
 # iter_std runs the process, connects to stdout and stderr and prints output line by line
